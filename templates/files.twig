@@ -1,0 +1,26 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+    <h2>Files</h2>
+    <div class="clearfix"></div>
+    <form method="post" action="?convert" enctype="multipart/form-data" class="clearfix form">
+        <label for="files">Files</label>
+        <input type="file" name="files[]" id="files" multiple />
+        <div class="clearfix"></div>
+        <label for="from_type">From:</label>
+        <select id="from_type" name="from_type">
+            {% for type, class in types %}
+                <option value="{{ type }}">{{ type|capitalize }}</option>
+            {% endfor %}
+        </select>
+        <div class="clearfix"></div>
+        <label for="to_type">To:</label>
+        <select id="to_type" name="to_type">
+            {% for type, class in types %}
+                <option value="{{ type }}">{{ type|capitalize }}</option>
+            {% endfor %}
+        </select>
+        <div class="clearfix"></div>
+        <button type="submit" name="convert">Convert</button>
+    </form>
+{% endblock %}

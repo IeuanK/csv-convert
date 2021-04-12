@@ -1,0 +1,83 @@
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: block;
+  flex-direction: row;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-self: center;
+}
+
+header {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #827575;
+}
+header ul {
+  line-height: 40px;
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header ul li {
+  float: left;
+  height: 40px;
+  height: 40px;
+  list-style: none;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+  width: 100%;
+  height: 1px;
+}
+
+.form {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  border-width: 1px;
+  border-style: dashed;
+  border-color: #777777;
+  border-radius: 4px;
+}
+
+.table {
+  width: 100%;
+  padding: 5px 0;
+  border: 1px #777777 solid;
+}
+.table tr {
+  width: 100%;
+}
+
+.dropzone {
+  border: 2px dashed #0087f7;
+  border-radius: 5px;
+  background: white;
+}
+
+.dropzone .dz-message {
+  font-weight: 400;
+}
+
+.dropzone .dz-message .note {
+  font-size: 0.8em;
+  font-weight: 200;
+  display: block;
+  margin-top: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

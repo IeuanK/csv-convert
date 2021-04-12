@@ -1,0 +1,8 @@
+/data
+/cache
+/vendor
+/.idea
+*.iml
+composer.lock
+
+/src/ConverterLib/Config.php

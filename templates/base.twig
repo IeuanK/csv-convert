@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        {% block header %}
+            <header>
+                <div class="container">
+                    <ul class="menu">
+                        {% block menu %}
+                            <li><a href="?convert">Convert files</a></li>
+                        {% endblock %}
+                    </ul>
+                </div>
+            </header>
+        {% endblock %}
+
+        <div class="container">
+            {% block content %}
+                <h2>Pick option above</h2>
+            {% endblock %}
+        </div>
+    </body>
+</html>
